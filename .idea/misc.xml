@@ -3,11 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Unknown/OneDrive/Datamatiker/4.semester/mobile apps/MandatoryAssignMent/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.3165" />
         <entry key="..\:/Users/Unknown/OneDrive/Datamatiker/4.semester/mobile apps/MandatoryAssignMent/app/src/main/res/layout/activity_main.xml" value="0.5541666666666667" />
         <entry key="..\:/Users/Unknown/OneDrive/Datamatiker/4.semester/mobile apps/MandatoryAssignMent/app/src/main/res/layout/content_main.xml" value="0.379981884057971" />
         <entry key="..\:/Users/Unknown/OneDrive/Datamatiker/4.semester/mobile apps/MandatoryAssignMent/app/src/main/res/layout/fragment_first.xml" value="0.379981884057971" />
+        <entry key="..\:/Users/Unknown/OneDrive/Datamatiker/4.semester/mobile apps/MandatoryAssignMent/app/src/main/res/layout/fragment_login.xml" value="0.46510416666666665" />
+        <entry key="..\:/Users/Unknown/OneDrive/Datamatiker/4.semester/mobile apps/MandatoryAssignMent/app/src/main/res/layout/fragment_loginfragment.xml" value="0.46510416666666665" />
         <entry key="..\:/Users/Unknown/OneDrive/Datamatiker/4.semester/mobile apps/MandatoryAssignMent/app/src/main/res/layout/fragment_second.xml" value="0.2261904761904762" />
+        <entry key="..\:/Users/Unknown/OneDrive/Datamatiker/4.semester/mobile apps/MandatoryAssignMent/app/src/main/res/layout/fragment_welcome_login.xml" value="0.46510416666666665" />
         <entry key="..\:/Users/Unknown/OneDrive/Datamatiker/4.semester/mobile apps/MandatoryAssignMent/app/src/main/res/layout/list_item.xml" value="0.2261904761904762" />
+        <entry key="..\:/Users/Unknown/OneDrive/Datamatiker/4.semester/mobile apps/MandatoryAssignMent/app/src/main/res/layout/loginfragment.xml" value="0.46510416666666665" />
         <entry key="..\:/Users/Unknown/OneDrive/Datamatiker/4.semester/mobile apps/MandatoryAssignMent/app/src/main/res/menu/menu_main.xml" value="0.5541666666666667" />
         <entry key="..\:/Users/Unknown/StudioProjects/MandatoryAssignMent/app/src/main/res/layout/fragment_first.xml" value="0.10309017223910841" />
         <entry key="..\:/Users/Unknown/StudioProjects/MandatoryAssignMent/app/src/main/res/layout/fragment_second.xml" value="0.17135416666666667" />

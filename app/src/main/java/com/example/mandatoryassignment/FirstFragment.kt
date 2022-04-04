@@ -63,6 +63,7 @@ class FirstFragment : Fragment() {
             binding.swiperefresh.isRefreshing = false
         }
 
+        
         /*binding.buttonFirst.setOnClickListener {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }*/

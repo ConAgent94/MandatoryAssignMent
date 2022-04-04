@@ -15,7 +15,7 @@ class SalesItemRepository {
     private val salesItemService: SalesItemService
     val itemsLiveData: MutableLiveData<List<Item>> = MutableLiveData<List<Item>>()
     val errorMessageLiveData: MutableLiveData<String> = MutableLiveData()
-    //val updateMessageLiveData: MutableLiveData<String> = MutableLiveData()
+    val updateMessageLiveData: MutableLiveData<String> = MutableLiveData()
 
     init {
         val build: Retrofit = Retrofit.Builder()
@@ -44,4 +44,46 @@ class SalesItemRepository {
             }
         })
     }
+
+    fun add(item: Item) {
+        salesItemService.saveItem(item).enqueue(object : Callback<Item> {
+            override fun onResponse(call: Call<Item>, response: Response<Item>) {
+                if (response.isSuccessful) {
+                    Log.d("APPLE", "ADDED" + response.body())
+
+                } else {
+                    val message = response.code().toString() + " " + response.message()
+                    errorMessageLiveData.postValue(message)
+                    Log.d("APPLE", message)
+                }
+            }
+
+            override fun onFailure(call: Call<Item>, t: Throwable) {
+                errorMessageLiveData.postValue(t.message)
+                Log.d("APPLE", t.message!!)
+            }
+        })
+    }
+
+    fun delete(id: Int) {
+        salesItemService.deleteItem(id).enqueue(object : Callback<Item> {
+            override fun onResponse(call: Call<Item>, response: Response<Item>) {
+                if (response.isSuccessful) {
+                    Log.d("APPLE", "Updated: " + response.body())
+                    updateMessageLiveData.postValue("Deleted: " + response.body())
+                } else {
+                    val message = response.code().toString() + " " + response.message()
+                    errorMessageLiveData.postValue(message)
+                    Log.d("APPLE", message)
+                }
+            }
+
+            override fun onFailure(call: Call<Item>, t: Throwable) {
+                errorMessageLiveData.postValue(t.message)
+                Log.d("APPLE", t.message!!)
+            }
+        })
+    }
+
+
 }

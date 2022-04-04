@@ -16,6 +16,7 @@ class MyAdapter<T> (
         return items.size
     }
 
+
     override fun onCreateViewHolder(viewGroup: ViewGroup, viewType: Int): MyViewHolder {
         // Create a new view, which defines the UI of the list item
         val view = LayoutInflater.from(viewGroup.context)
